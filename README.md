@@ -43,7 +43,7 @@ Cara Install Server
 - `/Data`     -> Digunakan Untuk Melihat Data Hasil Scraping
 
 
-## API Reference
+## Penggunaan API
 
 #### Kirim Pesan
 
