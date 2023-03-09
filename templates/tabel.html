@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+	<div class="w3-container">
+		<button onclick="location.href = '{{ url_for('Download') }}';" class="w3-button w3-black">Download As .CSV</button>
+		<button onclick="location.href = '{{ url_for('Main') }}';" class="w3-button w3-black">Kembali</button>
+	</div>
+	<div id="data-tabel"></div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		<!-- $("#monitor").html('<center><h1>Loading</h1></center>'); -->
+		setInterval(function(){
+			$("#data-tabel").load('/Tabel-Api');
+		}, 1000);
+	});
+</script>
+{% endblock %}

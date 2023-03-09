@@ -1,0 +1,28 @@
+{% extends "base1.html" %}
+{% block content %}
+	<div class="testbox">
+		<form action="{{ url_for('Main') }}" method="POST">
+		<div class="banner">
+			<h1>{{ h1 }}</h1>
+		</div>
+		<div class="item">
+			<p>Tanggal Mulai</p>
+			<input type="date" name="mulai" required/>
+			<i class="fas fa-calendar-alt"></i>
+		</div>
+		
+		<div class="item">
+			<p>Tanggal Mulai</p>
+			<input type="date" name="sampai" required/>
+			<i class="fas fa-calendar-alt"></i>
+		</div>
+		<div class="item">
+			<p>Keyword</p>
+			<input type="text" name="query"/>
+		</div>
+		<div class="btn-block">
+			<button type="submit">SEND</button>
+		</div>
+		</form>
+	</div>
+{% endblock %}

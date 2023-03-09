@@ -1,0 +1,28 @@
+<table>
+	<thead>
+	<tr>
+		<th>No</th>
+		<th>Author</th>
+		<th>Content</th>
+		<th>Datepost</th>
+		<th>Reply</th>
+		<th>Retweet</th>
+		<th>Like</th>
+		<th>Penayangan</th>
+	</thead>
+	<tbody>
+			
+	{% for i in range(total) %}
+		<tr>
+			<td>{{i+1}}</td> 
+			<td>{{data[i]['author']}}</td> 
+			<td>{{data[i]['content']}}</td> 
+			<td>{{data[i]['datepost']}}</td> 
+			<td>{{data[i]['reply']}}</td>
+			<td>{{data[i]['retweet']}}</td>
+			<td>{{data[i]['like']}}</td>
+			<td>{{data[i]['penayangan']}}</td>
+		<tr>
+	{% endfor %} 
+	</tbody>
+</table>
